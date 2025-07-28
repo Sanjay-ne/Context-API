@@ -1,22 +1,14 @@
 
-import UserContextProvider from './Context/UserContextProvider'
-import Login from './Components/Login'
-import Profile from './Components/Profile'
+import React from 'react';
+import DashboardRouter from './Components/DashboardRouter';
+import './index.css';
 
 function App() {
-
-
   return (
-
-    <UserContextProvider>
-
-      <Login></Login>
-      <Profile></Profile>
-
-    </UserContextProvider>
-
-
-  )
+    <div className="App">
+      <DashboardRouter />
+    </div>
+  );
 }
 
-export default App
+export default App;
